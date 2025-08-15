@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baby's Dayout Daycare</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header TEXT-ALIGN="center">
+    <div style=" align-items: center;">
+      <div style="display: flex; align-items: center; justify-content: LEFT; gap: 1px;">
+        <img src="static/logo.png" alt="Daycare Logo" style="height: 250px; width: 250px;">
+        <div>
+            <h1 style="margin: 0; font-family: 'Comic Sans MS', 'Comic Sans', cursive; font-weight: 700; letter-spacing: 2px; background: linear-gradient(90deg, #1A2E35 0%, #5B2C6F 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;">
+            BABY'S DAYOUT DAYCARE
+            </h1>
+          <div class="command">Safe Hands Happy Hearts!</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <div class="gallery">
+    <style>
+      .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* vertical center if needed */
+    align-items: center;      /* horizontally center the whole block */
+    min-height: 100vh;        /* center within full page height */
+    gap: 45px;
+}
+
+.gallery-row {
+    display: flex;
+    gap: 40px;
+    justify-content: center;  /* centers each row */
+}
+
+.gallery-row img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: transform 0.2s;
+}
+
+.gallery-row img:hover {
+    transform: scale(1.04) rotate(-2deg);
+    box-shadow: 0 8px 20px rgba(91, 44, 111, 0.2);
+}
+
+    </style>
+    <div class="gallery-row">
+      <img src="static/DC2.jpg" alt="Daycare 1">
+      <img src="static/DC4.jpg" alt="Daycare 2">
+    </div>
+    <div class="gallery-row">
+      <img src="static/DC3.jpg" alt="Daycare 3">
+      <img src="static/dc1.jpg" alt="Daycare 4">
+    </div>
+  </div>
+
+  <div class="map-contact-wrapper">
+  
+  <!-- Map Section -->
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.123133910615!2d76.90414729999999!3d11.0293873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85f39a163182f%3A0xd65fa0ac5f27d18f!2s6%2F11%2C%20Vadavalli%2C%20Coimbatore%2C%20Tamil%20Nadu%20641041!5e0!3m2!1sen!2sin!4v1755015114678!5m2!1sen!2sin"
+     style="border:0;" allowfullscreen="" loading="lazy" 
+     referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact">
+    <h2>Contact Us</h2>
+    <p class="contactus"><strong>PHONE:</strong></p>
+  <div class="phone-list">
+    <a href="tel:+919629206368">+91 9629206368</a><br>
+    <a href="tel:+919629206328">+91 9629296328</a>
+  </div><br>
+    
+    <p class="contactus"><strong>ADDRESS:</strong></p>
+    <p class="address">No. 6, Periyar Nagar,<br>
+       1st Street (near post office), Vadavalli<br>
+       Coimbatore - 641041
+    </p>
+  </div>
+
+</div>
+
+<br> <br>
+</body>
+<footer>
+  <p>&copy; 2025 Baby's Dayout Daycare. All rights reserved.</p>
+</footer>
+</html>

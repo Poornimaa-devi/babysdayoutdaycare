@@ -1,0 +1,7 @@
+Prob statement 2
+UNSUPERVISED LEARNING CLUSTERING
+To classify customer or to make customer segmentation for a supermarket or a retail store by analyzing the ustomer database so as to provide 
+customized services
+link: https://www.kaggle.com/datasets/kandij/mall-customers
+Taking a dataset and clustering into groups. this is thing we will do.
+todayyy its a wednesday. tomorrow thursday
