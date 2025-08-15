@@ -189,3 +189,33 @@ footer p {
     text-align: center !important;
   }
 }
+/* ---------- Mobile-only fixes (keep your current design) ---------- */
+@media (max-width: 768px) {
+  /* Header: keep layout neat on phones */
+  header { flex-direction: column !important; text-align: center !important; }
+  header img { width: min(48vw, 160px) !important; height: auto !important; }
+  header h1 { font-size: clamp(1.4rem, 6vw, 2rem) !important; letter-spacing: 1px !important; }
+  .command { font-size: clamp(1rem, 4.5vw, 1.4rem) !important; }
+
+  /* Gallery: override the fixed 320x320 sizes from the inline <style> */
+  .gallery { min-height: auto !important; gap: 16px !important; padding: 16px !important; }
+  .gallery-row { flex-direction: column !important; gap: 16px !important; width: 100% !important; }
+  .gallery-row img {
+    width: 100% !important;
+    height: auto !important;       /* show full image */
+    max-width: 100% !important;
+    border-radius: 16px !important;
+    object-fit: contain !important; /* no cropping on mobile */
+  }
+
+  /* Map & Contact: stack vertically with comfy sizing */
+  .map-contact-wrapper { flex-direction: column !important; align-items: stretch !important; }
+  .map-container iframe { width: 100% !important; height: 50vh !important; min-height: 300px !important; }
+  .contact { width: 100% !important; text-align: center !important; font-size: 1rem !important; padding: 20px !important; }
+}
+
+/* Optional: slightly wider phones/tablets */
+@media (min-width: 769px) and (max-width: 992px) {
+  .gallery-row img { width: 48% !important; height: auto !important; object-fit: cover !important; }
+  .gallery-row { flex-wrap: wrap !important; justify-content: center !important; gap: 18px !important; }
+}
