@@ -219,3 +219,8 @@ footer p {
   .gallery-row img { width: 48% !important; height: auto !important; object-fit: cover !important; }
   .gallery-row { flex-wrap: wrap !important; justify-content: center !important; gap: 18px !important; }
 }
+.small-img {
+  max-height: 350px; /* Reasonable height */
+  width: 100%;
+  object-fit: cover;
+}
