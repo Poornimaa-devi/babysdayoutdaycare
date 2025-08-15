@@ -159,3 +159,30 @@ footer p {
   margin: 0;
   font-size: 1.5em;
 }
+/* Mobile Responsiveness Fix */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  header img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  .gallery {
+    grid-template-columns: 1fr !important;
+  }
+  .map-contact-wrapper {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .map-container iframe {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 250px !important;
+  }
+  .contact {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
